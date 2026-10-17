@@ -18,6 +18,5 @@ This repository contains symbols, footprints and 3D models for parts commonly us
 
 **4. Verify** — open the Symbol Editor or place a symbol; your new library should appear in the list by its nickname.
 
-**Tips**
-- Use the same nickname convention your team uses (handy for FBR if others pull the same project).
-- Consider the **Project Specific** tab plus the `${KIPRJMOD}` path variable if you want the library to travel with the repo rather than living only on your machine.
+# For project specific footprints (something that you sourced while building the project):
+Consider using ${KIPRJMOD} in the file path. This resolves to the folder containing your .kicad_pro file. You can put the sourced footprint/symbols somewhere within your repository and after you commit and push it, other people can access your design with the external footprint smoothly. 
